@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    char s[50];
+    int len = 0;
+
+    fgets(s, sizeof(s), stdin);
+
+    while (s[len] != '\0' && s[len] != '\n')
+        len++;
+
+    printf("Length = %d\n", len);
+    return 0;
+}
