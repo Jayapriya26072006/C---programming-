@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char m[20];
+    int len;
+
+    fgets(m, sizeof(m), stdin);
+    m[strcspn(m, "\n")] = '\0';
+
+    len = strlen(m);
+
+    if (len == 10)
+        printf("Valid mobile number\n");
+    else
+        printf("Invalid mobile number\n");
+
+    return 0;
+}
