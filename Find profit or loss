@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    float cost, selling;
+
+    printf("Enter cost price: ");
+    scanf("%f", &cost);
+
+    printf("Enter selling price: ");
+    scanf("%f", &selling);
+
+    if(selling > cost)
+    {
+        printf("Profit\n");
+    }
+    else if(selling < cost)
+    {
+        printf("Loss\n");
+    }
+    else
+    {
+        printf("No profit no loss\n");
+    }
+
+    return 0;
+}
