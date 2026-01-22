@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int exp[5];
+    int i;
+    int total = 0;
+
+    for (i = 0; i < 5; i++)
+    {
+        scanf("%d", &exp[i]);
+        total = total + exp[i];
+    }
+
+    printf("Total expense = %d\n", total);
+    return 0;
+}
