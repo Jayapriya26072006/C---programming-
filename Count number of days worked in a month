@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int days;
+    int holidays;
+    int worked;
+
+    printf("Enter total days in month: ");
+    scanf("%d", &days);
+
+    printf("Enter holidays: ");
+    scanf("%d", &holidays);
+
+    worked = days - holidays;
+
+    printf("Days worked = %d\n", worked);
+
+    return 0;
+}
