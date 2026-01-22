@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int temp[7], i, high, low;
+    for (i = 0; i < 7; i++) {
+        scanf("%d", &temp[i]);
+    }
+
+    high = low = temp[0];
+
+    for (i = 1; i < 7; i++) {
+        if (temp[i] > high) high = temp[i];
+        if (temp[i] < low) low = temp[i];
+    }
+
+    printf("Highest = %d\nLowest = %d\n", high, low);
+    return 0;
+}
