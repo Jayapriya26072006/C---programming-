@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char s[50];
+    char r[50];
+    int i, j = 0;
+    int len;
+
+    fgets(s, sizeof(s), stdin);
+    len = strlen(s);
+
+    if (s[len - 1] == '\n')
+        len--;
+
+    for (i = len - 1; i >= 0; i--)
+        r[j++] = s[i];
+
+    r[j] = '\0';
+
+    if (strcmp(s, r) == 0)
+        printf("Palindrome\n");
+    else
+        printf("Not Palindrome\n");
+
+    return 0;
+}
