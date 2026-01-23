@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+struct item {
+    int id;
+    char name[20];
+};
+
+int main() {
+    struct item i;
+    scanf("%d %s", &i.id, i.name);
+    printf("Item ID:%d\nItem Name:%s", i.id, i.name);
+    return 0;
+}
